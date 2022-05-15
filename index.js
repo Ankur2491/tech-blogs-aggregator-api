@@ -371,7 +371,7 @@ const valueMap = {
     "Zendesk(old)": "https://developerblog.zendesk.com/feed",
     "Zenefits": "https://engineering.zenefits.com/feed/",
     "Zillow": "https://www.zillow.com/engineering/rss",
-    "Zomato": "https://engineering.zomato.com/rss",
+    "Zomato": "https://www.zomato.com/blog/category/tech-tastic/feed",
     "Zoosk": "https://medium.com/feed/zoosk-engineering",
     "Zulily": "https://zulily-tech.com/feed/",
     "Zumba": "http://feeds.feedburner.com/zumba_engineering",
