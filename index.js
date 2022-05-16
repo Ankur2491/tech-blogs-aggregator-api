@@ -132,7 +132,7 @@ const valueMap = {
     "Firmafon": "https://dev.firmafon.dk/blog/feed.xml",
     "Flickr": "http://code.flickr.net/feed/",
     "Flipboard": "http://engineering.flipboard.com/feed.xml",
-    "Flipkart": "https://tech.flipkart.com/feed",
+    "Flipkart": "https://blog.flipkart.tech/feed",
     "Foursquare": "https://engineering.foursquare.com/feed",
     "Freeletics": "https://freeletics.engineering/feed.xml",
     "Funding Circle": "https://engineering.fundingcircle.com/blog/feed.xml",
