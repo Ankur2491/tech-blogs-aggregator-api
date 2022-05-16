@@ -30,6 +30,7 @@ const valueMap = {
     "Airtame": "https://airtame.engineering/feed",
     "Algolia": "https://blog.algolia.com/feed/",
     "Allegro.tech": "https://allegro.tech/feed.xml",
+    "Amazon": "https://aws.amazon.com/blogs/opensource/feed",
     "Appnexus": "https://techblog.appnexus.com/feed",
     "Arkency": "http://blog.arkency.com/atom.xml",
     "Artsy": "http://artsy.github.io/feed",
