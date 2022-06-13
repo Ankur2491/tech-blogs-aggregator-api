@@ -176,6 +176,7 @@ const valueMap = {
     "Honeybadger": "http://blog.honeybadger.io/feed.xml",
     "Hootsuite": "http://code.hootsuite.com/rss",
     "Hostinger": "https://www.hostinger.com/blog/feed/",
+    "Hotstar": "https://blog.hotstar.com/feed",
     "Housing.com": "https://medium.com/feed/engineering-housing",
     "HubSpot": "https://product.hubspot.com/blog/rss.xml",
     "IBM developerWorks": "https://developer.ibm.com/dwblog/feed/",
