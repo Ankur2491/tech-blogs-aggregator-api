@@ -11,7 +11,6 @@ var allowCrossDomain = function (req, res, next) {
         next();
     }
 };
-const stream = require('youtube-audio-stream')
 const express = require("express");
 const axios = require('axios')
 const app = express();
@@ -674,21 +673,21 @@ const valueMap = {
     }
   })
 
-  app.get('/stream/:videoId', async(req, res) =>{
+  // app.get('/stream/:videoId', async(req, res) =>{
       
-    try {
-      for await (const chunk of stream(`http://youtube.com/watch?v=${req.params.videoId}`)) {
-        res.write(chunk)
-      }
-      res.end()
-    } catch (err) {
-      console.error(err)
-      if (!res.headersSent) {
-        res.writeHead(500)
-        res.end('internal system error')
-      }
-    }
-  });
+  //   try {
+  //     for await (const chunk of stream(`http://youtube.com/watch?v=${req.params.videoId}`)) {
+  //       res.write(chunk)
+  //     }
+  //     res.end()
+  //   } catch (err) {
+  //     console.error(err)
+  //     if (!res.headersSent) {
+  //       res.writeHead(500)
+  //       res.end('internal system error')
+  //     }
+  //   }
+  // });
   app.listen(port, () => {
     console.log(`Example app is listening on port http://localhost:${port}`)
   });
