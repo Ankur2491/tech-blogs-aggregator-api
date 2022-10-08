@@ -184,6 +184,7 @@ const valueMap = {
     "Imaginea": "https://blog.imaginea.com/feed/",
     "Imgur": "https://blog.imgur.com/feed/",
     "Indeed": "http://engineering.indeedblog.com/feed/",
+    "InfoQ": "https://feed.infoq.com/",
     "Instacart": "https://tech.instacart.com/feed",
     "Instagram": "https://instagram-engineering.com/feed",
     "Instawork": "https://engineering.instawork.com/feed",
