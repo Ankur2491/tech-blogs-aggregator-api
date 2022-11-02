@@ -674,10 +674,11 @@ const valueMap = {
     }
   })
 
-  app.get('/twitter/:qry', async (req, res) => {
+  app.get('/twitter/:qry/:pref', async (req, res) => {
     let qry = req.params.qry
+    let pref = req.params.pref
     let BEARER_TOKEN = 'AAAAAAAAAAAAAAAAAAAAACiUigEAAAAATHp%2Fsqmby%2BPaW0mAeoF0BeL0pVM%3Dh2ezcbfT4Al0ez7sby6t4Qkn1oEnL4eC35ZjQeCoRXI29j6ptX'
-    resp = await axios.get(`https://api.twitter.com/2/tweets/search/recent?query=${qry}`,
+    resp = await axios.get(`https://api.twitter.com/2/tweets/search/recent?query=${qry}&max_results=100&sort_order=${pref}`,
       { headers: { "Authorization": `Bearer ${BEARER_TOKEN}` } })
       .catch(err => { console.error(err) });
     res.send(resp.data);
