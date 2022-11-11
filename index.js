@@ -11,6 +11,7 @@ var allowCrossDomain = function (req, res, next) {
         next();
     }
 };
+var cors = require('cors')
 const express = require("express");
 const axios = require('axios')
 const bodyParser = require("body-parser");
@@ -18,6 +19,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(allowCrossDomain);
+app.use(cors())
 let port = process.env.PORT || 3050;
 const valueMap = {
     "500px": "https://developers.500px.com/feed",
