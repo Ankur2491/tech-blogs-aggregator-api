@@ -13,7 +13,10 @@ var allowCrossDomain = function (req, res, next) {
 };
 const express = require("express");
 const axios = require('axios')
+const bodyParser = require("body-parser");
 const app = express();
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use(allowCrossDomain);
 let port = process.env.PORT || 3050;
 const valueMap = {
@@ -683,6 +686,16 @@ const valueMap = {
       .catch(err => { console.error(err) });
     res.send(resp.data);
   })
+
+  app.post('/mr', async (req, res) => {
+    let url = req.body.url;
+    res.setHeader('Content-Type', 'text/html')
+    resp = await axios.get(`${url}`).catch(err => { console.error(err) });
+    let inIndex = resp.data.indexOf('https://www.youtube.com/');
+    let st = resp.data.substring(inIndex,inIndex+43);
+    res.send({'url': `${st}`});
+    // res.send('hi')
+  });
 
   // app.get('/stream/:videoId', async(req, res) =>{
       
