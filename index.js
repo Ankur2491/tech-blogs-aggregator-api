@@ -693,6 +693,9 @@ const valueMap = {
     resp = await axios.get(`${url}`).catch(err => { console.error(err) });
     let inIndex = resp.data.indexOf('https://www.youtube.com/');
     let st = resp.data.substring(inIndex,inIndex+43);
+    st = st.replace('com/','com/embed/')
+    // vId = st.substring(st.indexOf("v=")+2);
+    st = st.replace('watch?v=','')
     res.send({'url': `${st}`});
     // res.send('hi')
   });
